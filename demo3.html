@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <h2>hiển thị một số </h2>
+  <p id="demo"></p>
+  <script>
+          let a = +prompt("nhập số: ")
+          let sum = 0;
+          function sumOfListPrime(a) {
+          let check = true
+          for (let i = 2; i < a; i++) {
+          if (a%i === 0){
+          check = false;
+          break;
+      }
+      }
+          return check;
+      }
+          for (let j = 0; j <= a; j++){
+          if (sumOfListPrime(j) === true ){
+          sum += j
+      }
+      }
+          sum = sum - 1
+          document.write(" tổng các số nguyên tố tới x là: "+ sum)
+</script>
+</body>
+</html>
